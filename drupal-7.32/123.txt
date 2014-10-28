@@ -1,0 +1,16 @@
+este es un archivo txt
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0c747fd2b64847de23434c95b80d558c43e9b2fc
+touch README.md.................
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rociomendoza/Prueba.git
+git push -u origin master
+<<<<<<< HEAD
+
+hhhhhhhhhhhhhhhhhh
+=======
+>>>>>>> 0c747fd2b64847de23434c95b80d558c43e9b2fc
