@@ -2,3 +2,100 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+
+#cen1{
+
+	text-align: center;
+
+}
+#log{
+	width: 550px;
+	height: 75px;
+	text-align: center;
+	padding-top: 28px;
+   	border-top: 1px;
+   	margin-top: 38px;
+	text-align: center;
+
+}
+
+#linea{
+	color:#FF0000;
+}
+
+#EdV{
+	display: block;
+	width: 274px;
+	height: 24px;
+	font:100% Arial,Helvetica,sans-serif;
+	color:gray;
+}
+.edicion{
+	float: left;
+
+}
+
+.Version{
+	float: right;
+
+}
+
+
+#hora{
+	height: 14px;
+	font-size:12px;
+	background-color: gray;
+
+
+}
+
+#navbar{
+	background-color:white;
+
+
+}
+
+#es_noticias{
+	height: 47px;
+	width: 1110px;
+	display: block;
+	margin-bottom: 23px;
+	border-bottom: 1px solid #AED7F7;
+	padding: 15px 0;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-style: italic;
+	font-size: 80%;
+	text-align: center;
+	color: #5b5b5b;
+}
+
+.Navigation{
+	width: 180px;
+	height: 50;
+}
+
+
+
+
+#skip-link{
+	width: 1029px;
+	height: 109px;
+	margin-left: 197px;
+	border-style: solid;
+	border: 1px;
+}
+
+#cont1{
+	display: block;
+	margin-left: 50%;
+
+}
+
+
+
+#cabecera{
+	width: 1209px;
+	height: 5px;
+	margin-left: 107px;
+
+}
