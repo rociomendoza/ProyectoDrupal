@@ -8,7 +8,9 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[imga]			='imga'
+regions[columna1]		='columna1'
+regions[columna2_h]		='columna2_h'
+regions[columna3]		='columna3'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
