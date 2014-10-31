@@ -74,7 +74,7 @@
  */
 ?>
 
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner">
 <div id="EdV">
   <div class="edicion">
    Edición:  America
@@ -83,7 +83,7 @@
     Version:  Clásica
   </div>
 </div>
-<hr id="linea">
+<br>
 <div id="cen1">
 <?php if ($logo): ?>
       <a id="log" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -110,28 +110,26 @@
       </div>
     <?php endif; ?>
 </div>
+
 <div class="es_noticias">
-    <ul>
-   Noticias: 
-    <li  id="uu" >Noticias 1</li>
-    <li  id="uu" >Noticias 2</li>
-    <li  id="uu" >Noticias 3</li>
-    <li  id="uu" >Noticias 4</li>
-    <li  id="uu" >Noticias 5</li>
-    <li  id="uu" >Noticias 6</li>
-    <li  id="uu" >Noticias 7</li>
+  <ul>
+    Es noticias:
+    <li class="uu">Nota 1</li>
+    <li class="uu">Nota 2</li>
+    <li class="uu">Nota 3</li>
+    <li class="uu">Nota 4</li>
+    <li class="uu">Nota 5</li>
   </ul>
 </div>
 
-<div class="main-container">
- <?php print render($page['columna1']); ?>
- <?php print render($page['columna2_h']); ?>
-    
 
-
-
-
-
+<div id="contenido">
+  <div class="main-container">
+    <?php print render($page['columna1']); ?>
+    <?php print render($page['columna2_h']); ?>
+    <div id="pc1"></div>
+  </div>
+<?php print render($page['columna3']); ?>
 </div>
 
 <footer class="footer container">
