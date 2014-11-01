@@ -123,11 +123,21 @@
 </div>
 
 
+
+
+
+
+      <section<?php print $content_column_class; ?>>
+      
+      <?php print render($page['content']); ?>
+    </section>
+
 <div id="contenido">
   <div class="main-container">
+     
     <?php print render($page['columna1']); ?>
     <?php print render($page['columna2_h']); ?>
-    <div id="pc1"></div>
+    
   </div>
 <?php print render($page['columna3']); ?>
 </div>
