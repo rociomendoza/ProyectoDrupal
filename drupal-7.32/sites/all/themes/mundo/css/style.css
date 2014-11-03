@@ -3,9 +3,167 @@
  * remove this comment and start adding your styles to this file.
  */
 
-#cen1{
 
-	text-align: center;
+#navbar{
+	background-color:white;
+	width: 997px;
+	margin:0 auto;
+	overflow:hidden;
+	padding-bottom: 25px;
+	display: block;
+	border-style: solid;
+	border:1px;
+
+
+}
+#EdV{
+	float: left;
+	width: 274px;
+	height: 24px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 100%;
+	color:gray;
+}
+.edicion{
+	float: left;
+	font-size: 100%;
+
+}
+
+.Version{
+	float: right;
+	font-size: 100%;
+
+}
+
+
+#rs{
+	margin-top: 8px;
+	float: right;
+	width: 395px;
+	height: 27px;
+	font:100% Arial,Helvetica,sans-serif;
+	color:gray;
+	border-style: solid;
+	border:1px;
+}
+
+.orbyt{
+	float: left;
+	margin: 8px 11.5px 0;
+	position: relative;
+
+}
+
+.siguenos{
+	padding: 0px;
+	margin: 8px 5px 0 0;
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	width: auto;
+	float: left;
+	line-height: 1;
+	list-style: none;
+
+}
+
+
+.siguenos li {
+display: inline;
+}
+
+
+.siguenos li a {
+text-decoration: none;
+float:left;
+width: 27px;
+height: 27px;
+text-align: center;
+
+}
+
+
+.siguenos li a:hover {
+background-color: transparent;
+
+}
+
+
+#mundoSocialToolbar{
+float: left;
+width: 195px;
+height: 27px;
+}
+
+.comunidad{
+margin: 0 0 0 11.5px;
+color: black;
+}
+
+
+
+.comunidad>a:before {
+background: none;
+border-right: 1px solid #3c81a2;
+border-bottom: 1px solid #3c81a2;
+content: "";
+height: 6px;
+position: absolute;
+right: 8px;
+bottom: 10px;
+width: 6px;
+z-index: 10;
+}
+
+.comunidad>a{
+color: #555;
+text-align: center;
+text-decoration: none;
+position: relative;
+text-transform: uppercase;
+font-family: "Roboto Condensed",Arial,sans-serif;
+font-size: 70%;
+padding: 7px 23px 5px 5px
+}
+
+
+.paywall{
+border-radius: 3px;
+-ms-border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;
+width: auto;
+height: auto;
+display: block;
+color: #fff;
+float: left;
+text-transform: uppercase;
+font-family:"Roboto Condensed",Arial,sans-serif;
+font-size: 80%;
+font-weight: 300;
+height: 27px;
+padding: 5px 8px 3px;
+margin-right: 10px;
+background: #1494b7;
+}
+
+
+.comunidad>a.paywall:before {
+display: none;
+}
+
+.comunidad>a.paywall{
+-webkit-border-radius: 3px;
+color: #fff;
+float: left;
+text-transform: uppercase;
+font-family: "Roboto Condensed",Arial,sans-serif;
+font-size: 95%;
+font-weight: 300;
+height: 27px;
+padding: 7px 10px 5px;
+margin-right: 10px;
 }
 
 .container{
@@ -33,22 +191,8 @@ width: 997px;
 	border:5px;
 }
 
-#EdV{
-	display: block;
-	width: 274px;
-	height: 24px;
-	font:100% Arial,Helvetica,sans-serif;
-	color:gray;
-}
-.edicion{
-	float: left;
 
-}
 
-.Version{
-	float: right;
-
-}
 
 
 #hora{
@@ -59,14 +203,9 @@ width: 997px;
 
 
 
-#navbar{
-	background-color:white;
-	width: 997px;
-	margin:0 auto;
-	overflow:hidden;
-	padding-bottom: 25px;
-	display: block;
+#cen1{
 
+	text-align: center;
 }
 
 

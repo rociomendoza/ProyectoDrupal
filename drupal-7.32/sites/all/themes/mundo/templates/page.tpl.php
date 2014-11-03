@@ -74,6 +74,7 @@
  */
 ?>
 
+
 <header id="navbar" role="banner">
 <div id="EdV">
   <div class="edicion">
@@ -83,7 +84,30 @@
     Version:  Clásica
   </div>
 </div>
+
+<div id="rs">
+  <a class="orbyt" href="http://quiosco.orbyt.es/" title="Orbyt">
+  <img alt="Orbyt" src="http://estaticos.elmundo.es/assets/desktop/master/img/iconos/logo-orbyt.png">
+  </a>
+  <ul class="siguenos">
+  <li><a href="http://www.facebook.com/elmundo" title="Síguenos en Facebook"><img src="//estaticos01.elmundo.es/assets/desktop/master/img/redes-sociales/facebook_cab.png" alt="Facebook"></a> </li>
+  <li><a href="http://twitter.com/elmundoes" title="Síguenos en Twitter"> <img src="//estaticos02.elmundo.es/assets/desktop/master/img/redes-sociales/twitter_cab.png" ></a> </li>
+  <li><a href="https://plus.google.com/+elmundo" title="Síguenos en Google+"><img src="//estaticos02.elmundo.es/assets/desktop/master/img/redes-sociales/google_cab.png"></a> </li>
+  </ul>
+  <div id="mundoSocialToolbar" class="comunidad"> 
+    <a href="https://seguro.elmundo.es/compras/quiosco?cid=PAYCI23301&amp;s_kw=em72x26" class="paywall">Suscríbete</a>
+   <a href="https://seguro.elmundo.es/elmundo/login/login.html" onclick="ueLogin.open(); return false;">Iniciar sesión</a> 
+  </div>
+  
+  <div >
+   
+  </div>
+</div>
 <br>
+<hr>
+
+
+
 <div id="cen1">
 <?php if ($logo): ?>
       <a id="log" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -123,11 +147,7 @@
 </div>
 
 
-
-
-
-
-      <section<?php print $content_column_class; ?>>
+    <section<?php print $content_column_class; ?>>
       
       <?php print render($page['content']); ?>
     </section>
