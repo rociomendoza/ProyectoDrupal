@@ -17,12 +17,14 @@
 
 }
 #EdV{
+	margin-top: 8px;
 	float: left;
 	width: 274px;
 	height: 24px;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 100%;
 	color:gray;
+	font-style: italic;
 }
 .edicion{
 	float: left;
@@ -36,6 +38,9 @@
 
 }
 
+.cont{
+		color:black;
+}
 
 #rs{
 	margin-top: 8px;
@@ -90,6 +95,7 @@ background-color: transparent;
 
 
 #mundoSocialToolbar{
+margin-top: 8px;
 float: left;
 width: 195px;
 height: 27px;
@@ -101,6 +107,48 @@ color: black;
 }
 
 
+.comunidad>a{
+color:  #3c81a2;
+text-align: center;
+position: relative;
+text-transform: uppercase;
+font-family: "Roboto Condensed",Arial,sans-serif;
+font-size: 65%;
+padding: 7px 23px 5px 5px
+}
+
+
+
+.paywall{
+ border-radius: 3px;
+-ms-border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;
+display: block;
+color: #fff;
+float: left;
+text-transform: uppercase;
+font-family:"Roboto Condensed",Arial,sans-serif;
+height: 27px;
+padding: 5px 8px 3px;
+margin-right: 10px;
+background: #1494b7;
+}
+
+
+.comunidad>a.paywall{
+color: #fff;
+float: left;
+font-family: "Roboto Condensed",Arial,sans-serif;
+font-size: 65%;
+height: 27px;
+width: 79px;
+padding: 7px 10px 5px;
+margin-right: 10px;
+text-align: center;
+}
+
 
 .comunidad>a:before {
 background: none;
@@ -111,64 +159,100 @@ height: 6px;
 position: absolute;
 right: 8px;
 bottom: 10px;
+-moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-sand-transform: rotate(45deg);
 width: 6px;
 z-index: 10;
 }
 
-.comunidad>a{
-color: #555;
-text-align: center;
-text-decoration: none;
-position: relative;
-text-transform: uppercase;
-font-family: "Roboto Condensed",Arial,sans-serif;
-font-size: 70%;
-padding: 7px 23px 5px 5px
+.publicidad-cabecera-a{
+	border-style: solid;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-bottom-left: 0px;
+	border-bottom-right: 0px;
+	margin-top: 10px;
+	border-color: #3c81a2;
+	padding: 0px;
 }
 
+#cen1{
 
-.paywall{
-border-radius: 3px;
--ms-border-radius: 3px;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
--khtml-border-radius: 3px;
-width: auto;
-height: auto;
-display: block;
-color: #fff;
-float: left;
-text-transform: uppercase;
-font-family:"Roboto Condensed",Arial,sans-serif;
-font-size: 80%;
-font-weight: 300;
-height: 27px;
-padding: 5px 8px 3px;
-margin-right: 10px;
-background: #1494b7;
+	text-align: center;
+	display: block;
+	padding: 20px 0 1px;
 }
 
-
-.comunidad>a.paywall:before {
-display: none;
-}
-
-.comunidad>a.paywall{
--webkit-border-radius: 3px;
-color: #fff;
-float: left;
-text-transform: uppercase;
-font-family: "Roboto Condensed",Arial,sans-serif;
-font-size: 95%;
-font-weight: 300;
-height: 27px;
-padding: 7px 10px 5px;
-margin-right: 10px;
-}
 
 .container{
 width: 997px;
+height: 38px;
+margin:0 auto;
+overflow:hidden;
+margin-left: 133px;
+display: block;
 }
+
+
+
+.navbar-collapse.collapse{
+	width: 924px;
+	height: 38px;
+	float: none;
+	left: 105px;
+	position: relative;
+	background-color: #eff2f2;
+	overflow: hidden;
+	font-size: 90%;
+	line-height: 115%;
+	margin-bottom: 0;
+
+}
+
+.region-header{
+	height: 47px;
+	width: 997px;
+	display: block;
+	margin:0 auto;
+}
+
+
+#block-views-titulos-block
+{
+	height: 47px;
+	width: 997px;
+	display: block;
+	margin-bottom: 23px;
+	border-bottom: 1px solid #AED7F7;
+	padding: 15px 0;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-style: italic;
+	font-size: 80%;
+	text-align: center;
+	color: #5b5b5b;
+	margin:0 auto;
+
+}
+.view-content{
+	
+
+}
+
+
+
+.es-noticia ul:before 
+{
+content: "Es noticia:"}
+
+.uu{
+display: inline;
+padding: 0 0 0 10px;
+}
+
 
 
 #log{
@@ -194,7 +278,6 @@ width: 997px;
 
 
 
-
 #hora{
 	height: 14px;
 	font-size:12px;
@@ -203,18 +286,7 @@ width: 997px;
 
 
 
-#cen1{
 
-	text-align: center;
-}
-
-
-.region-header{
-	height: 47px;
-	width: 997px;
-	display: block;
-	margin:0 auto;
-}
 
 #block-menu-menu-sub-menu{
 	height: 47px;
@@ -286,32 +358,6 @@ li.first .leaf .active{
 }
 
 
-.es_noticias{
-	height: 47px;
-	width: 997px;
-	display: block;
-	margin-bottom: 23px;
-	border-bottom: 1px solid #AED7F7;
-	padding: 15px 0;
-	font-family: Georgia,"Times New Roman",Times,serif;
-	font-style: italic;
-	font-size: 80%;
-	text-align: center;
-	color: #5b5b5b;
-margin:0 auto;
-
-}
-
-
-
-.es-noticia ul:before 
-{
-content: "Es noticia:"}
-
-.uu{
-display: inline;
-padding: 0 0 0 10px;
-}
 
 
 .navbar-collapse {

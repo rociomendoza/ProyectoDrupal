@@ -1,0 +1,59 @@
+<?php
+/*El primer hook, utilizamos el hook_help*/
+function mod_ejemplo_help($path, $arg){
+	switch ($path){
+		case "admin/help#mod_ejemplo":
+			return "<h1>Esta es la página de ayuda de mi módulo de Ejemplo</h1>";
+		break;
+	}
+}
+/*Declara la existencia del bloque a drupal*/
+function mod_ejemplo_block_info(){
+	$blocks['mod_ejemplo'] = array(
+		'info' => t('Posts Recientes'),
+		'cache' => DRUPAL_CACHE_PER_ROLE,
+	);
+	return $blocks;
+}
+/*Una funcion personalizada, para realizar un query*/
+function mod_ejemplo_retContent(){
+	  //Obtiene la fecha
+	  $hoy = getdate();
+	  //Calcula la fecha de hace una semana.
+	  $fecha_inicio = mktime(0, 0, 0,$hoy['mon'],($hoy['mday'] - 7), $hoy['year']);
+	  //Calcula el ahora.
+	  $fecha_fin = time();
+	  //Utilizamos el API para obtener los posts
+	  $query = db_select('node', 'n')
+	    ->fields('n', array('nid', 'title', 'created', 'type'))
+	    ->condition('type', 'Article') //Solo los publicados
+	    ->condition('status', 1) //Solo los publicados
+	    ->condition('created', array($fecha_inicio, $fecha_fin), 'BETWEEN')
+	    ->orderBy('created', 'DESC') //Mas recientes primero
+	    ->execute();
+	  return $query;
+}
+/*Csontruye el bloque utilizando el query de la función anterior*/
+function mod_ejemplo_block_view($delta = ''){
+	switch ($delta){
+		case 'mod_ejemplo':
+			$block['subject'] = t('Bloque Custom'); //La función t() permite hacer traducible la cadena
+			
+			if (user_access('access content')){
+					$resultado = mod_ejemplo_retContent();
+					$items = array();
+					foreach ($resultado as $node){
+						$items[] = array(
+							'data' => l($node->title, 'node/' . $node->nid));
+					}
+					if (empty($items)){
+						$block['content'] = 'No content Avaliable';
+					} else {
+						$block['content'] = theme('item_list', array('items' => $items));
+					
+					}
+			return $block;
+			break;
+	}
+}
+}

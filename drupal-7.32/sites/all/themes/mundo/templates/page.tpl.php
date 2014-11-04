@@ -78,10 +78,10 @@
 <header id="navbar" role="banner">
 <div id="EdV">
   <div class="edicion">
-   Edición:  America
+   Edición:  <span class="cont"> América</span>
   </div>
   <div class="Version">
-    Version:  Clásica
+    Versión: <span class="cont">Clásica</span>  
   </div>
 </div>
 
@@ -104,10 +104,9 @@
   </div>
 </div>
 <br>
-<hr>
+<br>
 
-
-
+<div class="publicidad-cabecera-a"></div>
 <div id="cen1">
 <?php if ($logo): ?>
       <a id="log" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -115,27 +114,36 @@
       </a>
       <?php endif; ?>
   <div id="hora">
-<time pubdate datetime="2014-10-29T17:51:55+01:0000Z">29 de octubre de 2014, actualizado a las <strong>17:51</strong> horas</time>
+<time datetime="2014-11-04T19:54:42+01:00">
+  "4 de noviembre de 2014, actualizado a las " 
+  <strong>19:54</strong>
+  " horas
+  "
+  </time>
  </div>
 </div>
 
 </header>
 
 <div class="container">
-   
-    <?php if (!empty($primary_nav) ||  !empty($page['navigation'])): ?>
+   <?php if (!empty($primary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
           
-        </nav>
-      </div>
+          </nav>
+        </div>
     <?php endif; ?>
+
+
 </div>
 
-<div class="es_noticias">
+
+<?php print render($page['header']); ?>
+
+<!--<div class="es_noticias">
   <ul>
     Es noticias:
     <li class="uu">Nota 1</li>
@@ -144,7 +152,7 @@
     <li class="uu">Nota 4</li>
     <li class="uu">Nota 5</li>
   </ul>
-</div>
+</div>-->
 
 
     <section<?php print $content_column_class; ?>>
