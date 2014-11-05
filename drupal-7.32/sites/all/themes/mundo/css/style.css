@@ -118,7 +118,6 @@ padding: 7px 23px 5px 5px
 }
 
 
-
 .paywall{
  border-radius: 3px;
 -ms-border-radius: 3px;
@@ -190,20 +189,44 @@ z-index: 10;
 
 .container{
 width: 997px;
-height: 38px;
-margin:0 auto;
+height: 40px;
 overflow:hidden;
-margin-left: 133px;
 display: block;
+padding: 0px;
 }
 
 
+#menu_izq{
 
+float: left;
+width: 110px;
+height: 38px;
+background: url("../secciones.png") no-repeat #000; 
+background-position: 12px 12px;
+
+}
+
+.menu_izq1{
+	font-size: 10px;
+	color: white;
+	float: right;
+	padding: 3px;
+	margin-top: 12px;
+	margin-right: 8px;
+
+}
+
+.icon{
+	width:33px;
+	height:31px;
+	margin-top: 3px;
+	margin-left: 2px;
+}
 .navbar-collapse.collapse{
-	width: 924px;
-	height: 38px;
-	float: none;
-	left: 105px;
+	padding: 0px;
+	width: 887px;
+	height: 40px;
+	float: right;
 	position: relative;
 	background-color: #eff2f2;
 	overflow: hidden;
@@ -212,6 +235,8 @@ display: block;
 	margin-bottom: 0;
 
 }
+
+
 
 .region-header{
 	height: 47px;
@@ -226,23 +251,44 @@ display: block;
 	height: 47px;
 	width: 997px;
 	display: block;
-	margin-bottom: 23px;
-	border-bottom: 1px solid #AED7F7;
 	padding: 15px 0;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	font-style: italic;
-	font-size: 80%;
-	text-align: center;
-	color: #5b5b5b;
-	margin:0 auto;
-
-}
-.view-content{
-	
+	text-align: center
 
 }
 
+#block-views-titulos-block .views-field-title
+{
+font-size: 13px;
+float: left;
+/*width: 30%;*/
+}
 
+#block-views-titulos-block  .views-row-1 , #block-views-titulos-block  .views-row-2 ,#block-views-titulos-block  .views-row-3,#block-views-titulos-block  .views-row-4
+{
+
+height: 18px;
+float: left;
+padding-left: 15px;
+padding-top: 0px;
+padding-bottom: 0px;
+padding-right: 15px;
+
+}
+
+
+
+h2.block-title{
+	font-size: 13px;
+	margin:0px;
+}
+
+.
+.field-content{
+	font-size: 180%/1;
+	padding: 0px;
+}
 
 .es-noticia ul:before 
 {
@@ -284,17 +330,10 @@ padding: 0 0 0 10px;
 	
 }
 
-
-
-
-
 #block-menu-menu-sub-menu{
 	height: 47px;
 	width: 997px;
-	margin-bottom: 23px;
-	/*border-bottom: 1px solid #AED7F7*/
-	border: 1px solid #AED7F7;
-	padding: 15px 0;
+
 	
 }
 
@@ -309,9 +348,6 @@ text-align: center;
 color: #5b5b5b;
 
 }
-
-
-
 
 #block-menu-menu-sub-menu ul {
    display: inline;
@@ -429,8 +465,8 @@ color: #0a385c;
 
 
 
-.views-field-title{
-	font-size: 30px;
+#block-views-lateral-block .views-field-title{
+	font-size: 25px;
 	font-family: Arial,Helvetica,sans-serif;
 	
 

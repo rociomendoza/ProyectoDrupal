@@ -126,6 +126,11 @@
 </header>
 
 <div class="container">
+  <a href="">
+  <div id="menu_izq">
+    <h2 class="menu_izq1">SECCIONES</h2>
+   </div>
+ </a>
    <?php if (!empty($primary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
@@ -142,18 +147,6 @@
 
 
 <?php print render($page['header']); ?>
-
-<!--<div class="es_noticias">
-  <ul>
-    Es noticias:
-    <li class="uu">Nota 1</li>
-    <li class="uu">Nota 2</li>
-    <li class="uu">Nota 3</li>
-    <li class="uu">Nota 4</li>
-    <li class="uu">Nota 5</li>
-  </ul>
-</div>-->
-
 
     <section<?php print $content_column_class; ?>>
       
