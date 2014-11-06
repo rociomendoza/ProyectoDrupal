@@ -1,0 +1,71 @@
+<?php
+
+/*El primer hook, utilizamos el hook_help*/
+function mod_consulta_help($path, $arg){
+	switch ($path){
+		case "admin/help#mod_consulta":
+			return "<h1>Esta es la página se muestra el listado de las personas que han llenado el cuestionario</h1>";
+		break;
+	}
+}
+
+/*Declara la existencia del bloque a drupal*/
+function mod_consulta_block_info(){
+	$blocks['mod_consulta'] = array(
+		'info' => t('Consulta'),
+		'cache' => DRUPAL_CACHE_PER_ROLE,
+	);
+	return $blocks;
+}
+/*
+function mod_ejemplo_retContent(){
+	  //Obtiene la fecha
+	  $hoy = getdate();
+	  //Calcula la fecha de hace una semana.
+	  $fecha_inicio = mktime(0, 0, 0,$hoy['mon'],($hoy['mday'] - 7), $hoy['year']);
+	  //Calcula el ahora.
+	  $fecha_fin = time();
+	  //Utilizamos el API para obtener los posts
+	  $query = db_select('node', 'n')
+	    ->fields('n', array('nid', 'title', 'created', 'type'))
+	    ->condition('type', 'Article') //Solo los publicados
+	    ->condition('status', 1) //Solo los publicados
+	    ->condition('created', array($fecha_inicio, $fecha_fin), 'BETWEEN')
+	    ->orderBy('created', 'DESC') //Mas recientes primero
+	    ->execute();
+	  return $query;
+}*/
+/*Una funcion personalizada, para realizar un query*/
+function mod_consulta_retContent(){
+	  
+	  $query = db_select('webform_submitted_data', 'webform')
+	    ->fields('webform', array('data'))
+	    ->execute();
+	  return $query;
+}
+
+
+/*Csontruye el bloque utilizando el query de la función anterior*/
+function mod_consulta_block_view($delta = ''){
+	switch ($delta){
+		case 'mod_consulta':
+			$block['subject'] = t('Bloque Custom'); //La función t() permite hacer traducible la cadena
+			
+			if (user_access('access content')){
+					$resultado = mod_consulta_retContent();
+					$items = array();
+					foreach ($resultado as $node){
+						$items[] = array(
+							'data' => l($node->data, 'node/' ));
+					}
+					if (empty($items)){
+						$block['content'] = 'No content Avaliable';
+					}else {
+						$block['content'] = theme('item_list', array('items' => $items));
+					
+					}
+			return $block;
+			break;
+	}
+}
+}

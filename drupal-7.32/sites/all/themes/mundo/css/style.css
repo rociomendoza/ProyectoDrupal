@@ -16,6 +16,7 @@
 
 
 }
+
 #EdV{
 	margin-top: 8px;
 	float: left;
@@ -187,6 +188,8 @@ z-index: 10;
 }
 
 
+
+
 .container{
 width: 997px;
 height: 40px;
@@ -254,16 +257,41 @@ background-position: 12px 12px;
 	padding: 15px 0;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	font-style: italic;
-	text-align: center
+	text-align: center;
+	border-bottom: 1px solid #AED7F7;
 
 }
 
-#block-views-titulos-block .views-field-title
-{
-font-size: 13px;
+
+#block-views-titulos-block .block-title{
+margin-left: 45px;
+width: 70px;
 float: left;
-/*width: 30%;*/
+font-family: Georgia,"Times New Roman",Times,serif;
+font-style: italic;
+font-size: 75%;
+text-align: center;
+color: #5b5b5b;
+font-size: 13px;
+margin:0px;
 }
+
+#block-views-titulos-block .views-field-title .field-content a{
+margin-left: 45px;
+float: left;
+color: #3C81A2;
+font-family: Georgia,"Times New Roman",Times,serif;
+font-style: italic;
+text-align: center;
+font-size: 13px;
+margin:0px;
+font-weight: normal;
+margin-top: -16px;
+}
+#block-views-titulos-block .views-field-title .field-content a:hover{
+	color:#904;
+}
+
 
 #block-views-titulos-block  .views-row-1 , #block-views-titulos-block  .views-row-2 ,#block-views-titulos-block  .views-row-3,#block-views-titulos-block  .views-row-4
 {
@@ -278,17 +306,6 @@ padding-right: 15px;
 }
 
 
-
-h2.block-title{
-	font-size: 13px;
-	margin:0px;
-}
-
-.
-.field-content{
-	font-size: 180%/1;
-	padding: 0px;
-}
 
 .es-noticia ul:before 
 {
@@ -316,84 +333,12 @@ padding: 0 0 0 10px;
 	display: none;
 }
 
-.linea{
-	color:#FF0000;
-	border:5px;
-}
-
-
-
 
 #hora{
 	height: 14px;
 	font-size:12px;
 	
 }
-
-#block-menu-menu-sub-menu{
-	height: 47px;
-	width: 997px;
-
-	
-}
-
-.block-title{
-margin-left: 45px;
-width: 70px;
-float: left;
-font-family: Georgia,"Times New Roman",Times,serif;
-font-style: italic;
-font-size: 75%;
-text-align: center;
-color: #5b5b5b;
-
-}
-
-#block-menu-menu-sub-menu ul {
-   display: inline;
-   list-style-type: circle;
-   text-align: center;
-   background-color:#E4E4E4;
-}
-
-.active li {
-width: 70px;
-}
-
-li.menu.nav .first .leaf .active{
-	list-style-type: circle;
-   text-align: center;
-   background-color:pink;
-}
-
- 
-li.first .leaf .active{
-	width: 130px;
-	float: left;
-   text-align: center;
-   margin: 0 10px 0 0;
-   border-color: red;
-   border:0px;
-}
-
-#block-menu-menu-sub-menu li{
-   width: 130px;
-	float: left;
-   text-align: center;
-   margin: 0 10px 0 0;
-   border:0px;
-}
-
-#block-menu-menu-sub-menu li a {
-   padding: 2px 7px 2px 7px;
-   color: #666;
-   background-color: #eeeeee;
-   border: 1px solid #ccc;
-   text-decoration: none;
-   font-size: 15px;
-}
-
-
 
 
 .navbar-collapse {
@@ -406,14 +351,6 @@ width: 1209px;
 height:50px;
 }
 
-
-.views-field .views-field-title{
-font-size: 100%;
-font-family: Arial, Helvetica, sans-serif;
-color: #0a385c;
-}
-
-
 #block-views-lateral-block{
 	display: inline-block;
 	width: 238px;
@@ -425,9 +362,6 @@ color: #0a385c;
 	border-left: 0px;
 	border-right: 0px;
 	border-style: solid;
-
-
-
 }
 #block-views-lateral-block-1{
 	display: inline-block;
@@ -445,6 +379,55 @@ color: #0a385c;
 }
 
 
+
+.views-field-title .field-content a
+{
+	font-size: 170%;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #044364;
+	font-weight: bold;
+	padding-bottom: 14px;
+
+}
+
+
+
+.view-content .views-field-title {
+padding-top: 14px;
+padding-bottom: 10px;
+}
+
+
+.view-content .views-field-name {
+padding-top: 0px;
+padding-bottom: 10px;
+color: #3C81A2;
+}
+
+.view-content .views-field-body{
+font-size: 82%;
+color: #555;
+font-family: Arial,Helvetica,sans-serif;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+line-height: 1;
+font-size-adjust: none;
+font-stretch: normal;
+-x-system-font: none;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+}
+
+.views-field-title .field-content a:hover{
+	font-size: 170%;
+	font-family: Arial,Helvetica,sans-serif;
+	color:#904;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
 #block-views-lateral-block-2{
 	display: inline-block;
 	width: 238px;
@@ -459,22 +442,63 @@ color: #0a385c;
 
 }
 
+#block-views-primera-plana-block{
+    display: inline-block;
+    padding-left: 50px;
+	width: 465px;
+	height: 460px;
+	padding:10px;
+	border-top: 3px;
+	border-bottom: 3px;
+	border-left: 0px;
+	border-right:0px;
+	border-style: solid;
+	border-color: #076cbb;
+	margin-bottom: 23px;
+	margin-top: 24px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #eff2f2;
+	
+}
+
+#block-views-primera-plana-block .views-field-title .field-content a
+{
+	font-size: 180%;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #044364;
+	font-weight: bold;
+	padding-bottom: 14px;
+
+}
+
+#block-views-primera-plana-block .block-title {
+font-size: 100%;
+width: 110px;
+background: none repeat scroll 0% 0% #FFF;
+color: #333;
+padding: 3.33333px 10px;
+border-radius: 2px;
+margin-top: -28px;
+border-style: solid;
+border-color: #509CD5;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-image: none;
+border-width: 1px 1px 2px;
+margin-bottom: 8px;
+font-style: normal;
+text-align: center;
+
+}
+
 .view-content .views-row{
 	padding-bottom: 15px;
 }
 
 
-
-#block-views-lateral-block .views-field-title{
-	font-size: 25px;
-	font-family: Arial,Helvetica,sans-serif;
-	
-
-}
-
-.active{
-
-}
 .region-columna1{
 	float: left;
 	width: 40%;
@@ -486,26 +510,6 @@ color: #0a385c;
 	/*height: 4657px;*/
 	float: right;
 
-}
-
-#block-views-primera-plana-block{
-    display: inline-block;
-    padding-left: 50px;
-	width: 465px;
-	height: 603px;
-	padding:10px;
-	border-top: 3px;
-	border-bottom: 3px;
-	border-left: 0px;
-	border-right:0px;
-	border-style: solid;
-	border-color: #076cbb;
-	margin-bottom: 23px;
-	margin-top: 14px;
-	margin-right: 0px;
-	margin-left: 0px;
-	background-color: #eff2f2;
-	
 }
 
 /*/views-field views-field-field-image
@@ -523,10 +527,25 @@ body.front .col-sm-9 .region-content{
 }
 
 #block-views-central-izq-block{
- float: left;
 	 width: 147px;
 	
 }
+
+#block-views-central-izq-block .views-field-field-image {
+	width: 147px;
+	height: 124px;
+	margin-bottom: 14px
+
+}
+
+#block-views-central-izq-block .views-field-title {
+	padding: 0px;
+	padding-bottom: 14px;
+	font-size: 75%;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	
+}
+
 #block-views-central-der-block{
 	 float: right;
 	 width: 271px;
@@ -581,11 +600,9 @@ float: left;
 
 #contenido{
 width: 997px;
-
-margin:0 auto;
+margin-right: 130px;
+margin-left: 130px;
 overflow:hidden;
-border:1px solid;
-
 display: block;
 }
 
