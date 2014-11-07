@@ -278,6 +278,7 @@ margin:0px;
 
 #block-views-titulos-block .views-field-title .field-content a{
 margin-left: 45px;
+
 float: left;
 color: #3C81A2;
 font-family: Georgia,"Times New Roman",Times,serif;
@@ -543,7 +544,7 @@ body.front .col-sm-9 .region-content{
 	padding-bottom: 14px;
 	font-size: 75%;
 	font-family: Georgia,"Times New Roman",Times,serif;
-	
+
 }
 
 #block-views-central-der-block{
@@ -642,4 +643,9 @@ display: block;
 
 .navbar-nav>li>a{
 	padding:10px 10px;
+}
+
+
+.col-sm-9{
+	margin-left: 160px;
 }
